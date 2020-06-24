@@ -1,0 +1,6 @@
+#+TITLE: System Information
+#+DATE: Sun May 17 14:11:57 UTC 2020
+#+AUTHOR: lacp
+#+MACHINE: ONE3
+#+FILE: env_info.org
+

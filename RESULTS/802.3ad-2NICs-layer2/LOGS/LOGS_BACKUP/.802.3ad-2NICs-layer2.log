@@ -1,0 +1,10 @@
+--------------------------------------------------------------------------
+mpiexec was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/.C.x
+Node: ONE3
+
+while attempting to start process rank 16.
+--------------------------------------------------------------------------
+8 total processes failed to start

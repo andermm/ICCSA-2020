@@ -1,0 +1,1860 @@
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 17:34:27 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        25.73         0.00
+            1         1000        26.26         0.04
+            2         1000        26.50         0.08
+            4         1000        26.35         0.15
+            8         1000        26.28         0.30
+           16         1000        26.41         0.61
+           32         1000        26.60         1.20
+           64         1000        28.00         2.29
+          128         1000        26.70         4.79
+          256         1000        27.07         9.46
+          512         1000        27.91        18.34
+         1024         1000        28.68        35.70
+         2048         1000        32.46        63.09
+         4096         1000        39.87       102.74
+         8192         1000        45.52       179.98
+        16384         1000        68.51       239.14
+        32768         1000        84.05       389.86
+        65536          640       113.63       576.75
+       131072          320       164.61       796.26
+       262144          160       260.12      1007.79
+       524288           80       438.10      1196.73
+      1048576           40       793.81      1320.93
+      2097152           20      1627.48      1288.59
+      4194304           10      3242.09      1293.70
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 17:40:05 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        25.32         0.00
+            1         1000        26.08         0.04
+            2         1000        26.31         0.08
+            4         1000        26.30         0.15
+            8         1000        26.42         0.30
+           16         1000        26.05         0.61
+           32         1000        26.19         1.22
+           64         1000        26.19         2.44
+          128         1000        26.36         4.86
+          256         1000        26.58         9.63
+          512         1000        27.26        18.78
+         1024         1000        28.94        35.38
+         2048         1000        32.32        63.37
+         4096         1000        40.06       102.26
+         8192         1000        46.13       177.58
+        16384         1000        68.66       238.64
+        32768         1000        61.72       530.87
+        65536          640       115.05       569.64
+       131072          320       165.90       790.05
+       262144          160       262.06      1000.33
+       524288           80       438.46      1195.75
+      1048576           40       793.79      1320.97
+      2097152           20      1731.47      1211.20
+      4194304           10      3547.47      1182.34
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 17:40:12 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        27.15         0.00
+            1         1000        26.73         0.04
+            2         1000        26.95         0.07
+            4         1000        26.57         0.15
+            8         1000        26.82         0.30
+           16         1000        26.63         0.60
+           32         1000        26.70         1.20
+           64         1000        26.89         2.38
+          128         1000        26.90         4.76
+          256         1000        27.20         9.41
+          512         1000        27.78        18.43
+         1024         1000        29.02        35.28
+         2048         1000        25.02        81.87
+         4096         1000        28.08       145.85
+         8192         1000        36.83       222.43
+        16384         1000        52.02       314.97
+        32768         1000        53.11       617.01
+        65536          640       112.78       581.11
+       131072          320       164.91       794.79
+       262144          160       261.08      1004.09
+       524288           80       437.37      1198.72
+      1048576           40       798.60      1313.01
+      2097152           20      1716.39      1221.84
+      4194304           10      3480.13      1205.22
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 17:40:19 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        25.10         0.00
+            1         1000        25.89         0.04
+            2         1000        25.90         0.08
+            4         1000        26.36         0.15
+            8         1000        25.86         0.31
+           16         1000        25.86         0.62
+           32         1000        26.12         1.22
+           64         1000        26.53         2.41
+          128         1000        26.48         4.83
+          256         1000        26.55         9.64
+          512         1000        27.22        18.81
+         1024         1000        28.54        35.88
+         2048         1000        32.38        63.26
+         4096         1000        40.49       101.16
+         8192         1000        46.06       177.85
+        16384         1000        67.49       242.76
+        32768         1000       110.80       295.74
+        65536          640       175.41       373.61
+       131072          320       164.42       797.19
+       262144          160       258.52      1014.00
+       524288           80       433.70      1208.88
+      1048576           40       787.58      1331.39
+      2097152           20      1708.30      1227.63
+      4194304           10      3442.28      1218.47
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 17:44:52 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        26.96         0.00
+            1         1000        26.41         0.04
+            2         1000        26.56         0.08
+            4         1000        26.63         0.15
+            8         1000        26.51         0.30
+           16         1000        26.52         0.60
+           32         1000        26.58         1.20
+           64         1000        26.90         2.38
+          128         1000        26.76         4.78
+          256         1000        27.13         9.44
+          512         1000        27.84        18.39
+         1024         1000        29.19        35.08
+         2048         1000        32.41        63.20
+         4096         1000        39.79       102.95
+         8192         1000        45.94       178.31
+        16384         1000        67.59       242.42
+        32768         1000        84.83       386.26
+        65536          640       112.06       584.81
+       131072          320       165.27       793.08
+       262144          160       257.18      1019.29
+       524288           80       437.26      1199.04
+      1048576           40       794.22      1320.26
+      2097152           20      1705.04      1229.97
+      4194304           10      3228.47      1299.16
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 17:44:59 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        25.30         0.00
+            1         1000        26.39         0.04
+            2         1000        26.09         0.08
+            4         1000        19.38         0.21
+            8         1000        19.64         0.41
+           16         1000        19.17         0.83
+           32         1000        19.42         1.65
+           64         1000        26.31         2.43
+          128         1000        26.59         4.81
+          256         1000        27.17         9.42
+          512         1000        27.63        18.53
+         1024         1000        28.68        35.70
+         2048         1000        32.13        63.74
+         4096         1000        39.67       103.25
+         8192         1000        45.83       178.73
+        16384         1000        66.81       245.25
+        32768         1000        53.13       616.70
+        65536          640       112.31       583.54
+       131072          320       164.25       797.99
+       262144          160       258.82      1012.83
+       524288           80       434.12      1207.70
+      1048576           40       788.25      1330.26
+      2097152           20      1611.59      1301.29
+      4194304           10      3255.49      1288.38
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 17:50:34 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        27.37         0.00
+            1         1000        26.62         0.04
+            2         1000        26.60         0.08
+            4         1000        26.40         0.15
+            8         1000        26.48         0.30
+           16         1000        26.36         0.61
+           32         1000        26.67         1.20
+           64         1000        26.57         2.41
+          128         1000        26.80         4.78
+          256         1000        27.04         9.47
+          512         1000        27.60        18.55
+         1024         1000        29.12        35.16
+         2048         1000        32.41        63.18
+         4096         1000        40.51       101.11
+         8192         1000        47.82       171.32
+        16384         1000        67.74       241.87
+        32768         1000        58.48       560.32
+        65536          640       112.42       582.94
+       131072          320       165.28       793.02
+       262144          160       259.71      1009.38
+       524288           80       435.89      1202.79
+      1048576           40       787.79      1331.04
+      2097152           20      1702.62      1231.72
+      4194304           10      3264.43      1284.85
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 18:02:02 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        25.07         0.00
+            1         1000        26.22         0.04
+            2         1000        26.24         0.08
+            4         1000        25.95         0.15
+            8         1000        26.00         0.31
+           16         1000        25.86         0.62
+           32         1000        26.19         1.22
+           64         1000        26.48         2.42
+          128         1000        26.31         4.87
+          256         1000        26.56         9.64
+          512         1000        27.24        18.80
+         1024         1000        28.62        35.77
+         2048         1000        32.24        63.53
+         4096         1000        39.58       103.48
+         8192         1000        45.67       179.39
+        16384         1000        67.14       244.02
+        32768         1000        61.52       532.65
+        65536          640       111.58       587.37
+       131072          320       166.58       786.84
+       262144          160       259.61      1009.76
+       524288           80       439.63      1192.56
+      1048576           40       788.36      1330.08
+      2097152           20      1634.59      1282.98
+      4194304           10      3222.71      1301.49
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 18:16:39 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        25.56         0.00
+            1         1000        26.08         0.04
+            2         1000        26.06         0.08
+            4         1000        26.07         0.15
+            8         1000        27.63         0.29
+           16         1000        26.18         0.61
+           32         1000        26.02         1.23
+           64         1000        26.14         2.45
+          128         1000        26.66         4.80
+          256         1000        26.71         9.58
+          512         1000        27.68        18.50
+         1024         1000        28.76        35.61
+         2048         1000        32.19        63.62
+         4096         1000        40.36       101.49
+         8192         1000        45.94       178.33
+        16384         1000        68.50       239.17
+        32768         1000        87.09       376.24
+        65536          640       112.27       583.73
+       131072          320       165.76       790.71
+       262144          160       259.40      1010.57
+       524288           80       433.06      1210.65
+      1048576           40       786.70      1332.87
+      2097152           20      1630.13      1286.49
+      4194304           10      3216.56      1303.97
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 18:16:46 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        25.32         0.00
+            1         1000        26.37         0.04
+            2         1000        26.05         0.08
+            4         1000        26.21         0.15
+            8         1000        26.15         0.31
+           16         1000        26.06         0.61
+           32         1000        26.48         1.21
+           64         1000        26.40         2.42
+          128         1000        26.83         4.77
+          256         1000        27.05         9.46
+          512         1000        27.28        18.77
+         1024         1000        28.93        35.40
+         2048         1000        31.84        64.32
+         4096         1000        39.65       103.30
+         8192         1000        45.70       179.27
+        16384         1000        51.54       317.92
+        32768         1000        85.10       385.07
+        65536          640       175.76       372.87
+       131072          320       165.04       794.18
+       262144          160       259.57      1009.93
+       524288           80       435.76      1203.17
+      1048576           40       789.68      1327.86
+      2097152           20      1621.19      1293.59
+      4194304           10      3244.00      1292.94
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 18:35:21 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        25.55         0.00
+            1         1000        26.18         0.04
+            2         1000        26.79         0.07
+            4         1000        26.41         0.15
+            8         1000        26.28         0.30
+           16         1000        26.27         0.61
+           32         1000        26.50         1.21
+           64         1000        26.81         2.39
+          128         1000        26.77         4.78
+          256         1000        27.00         9.48
+          512         1000        27.72        18.47
+         1024         1000        29.08        35.22
+         2048         1000        32.30        63.40
+         4096         1000        40.04       102.30
+         8192         1000        46.20       177.31
+        16384         1000        68.63       238.74
+        32768         1000        54.42       602.09
+        65536          640       112.11       584.57
+       131072          320       165.47       792.10
+       262144          160       259.45      1010.39
+       524288           80       438.10      1196.72
+      1048576           40       789.27      1328.53
+      2097152           20      1635.20      1282.50
+      4194304           10      3251.32      1290.03
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 19:01:26 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        25.56         0.00
+            1         1000        26.50         0.04
+            2         1000        26.47         0.08
+            4         1000        26.37         0.15
+            8         1000        26.25         0.30
+           16         1000        26.21         0.61
+           32         1000        26.38         1.21
+           64         1000        26.61         2.40
+          128         1000        27.03         4.74
+          256         1000        27.09         9.45
+          512         1000        27.88        18.37
+         1024         1000        28.87        35.47
+         2048         1000        32.44        63.13
+         4096         1000        40.21       101.87
+         8192         1000        46.13       177.58
+        16384         1000        67.67       242.11
+        32768         1000        75.94       431.50
+        65536          640       112.21       584.03
+       131072          320       177.02       740.44
+       262144          160       288.56       908.46
+       524288           80       454.04      1154.72
+      1048576           40       798.27      1313.55
+      2097152           20      1622.79      1292.31
+      4194304           10      3267.08      1283.81
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 19:05:54 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        25.26         0.00
+            1         1000        26.13         0.04
+            2         1000        26.05         0.08
+            4         1000        26.08         0.15
+            8         1000        26.09         0.31
+           16         1000        25.96         0.62
+           32         1000        26.17         1.22
+           64         1000        26.17         2.45
+          128         1000        26.40         4.85
+          256         1000        26.90         9.52
+          512         1000        27.60        18.55
+         1024         1000        28.86        35.49
+         2048         1000        32.04        63.92
+         4096         1000        39.74       103.07
+         8192         1000        46.61       175.75
+        16384         1000        57.50       284.95
+        32768         1000        53.13       616.80
+        65536          640       112.06       584.82
+       131072          320       164.85       795.09
+       262144          160       259.75      1009.21
+       524288           80       434.48      1206.71
+      1048576           40       786.25      1333.64
+      2097152           20      1625.53      1290.13
+      4194304           10      3236.94      1295.76
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 19:12:18 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        26.73         0.00
+            1         1000        25.92         0.04
+            2         1000        26.05         0.08
+            4         1000        26.01         0.15
+            8         1000        26.31         0.30
+           16         1000        25.99         0.62
+           32         1000        26.26         1.22
+           64         1000        26.21         2.44
+          128         1000        26.66         4.80
+          256         1000        26.77         9.56
+          512         1000        27.45        18.65
+         1024         1000        28.94        35.39
+         2048         1000        32.05        63.89
+         4096         1000        39.91       102.63
+         8192         1000        46.15       177.51
+        16384         1000        68.12       240.51
+        32768         1000        52.79       620.76
+        65536          640       111.64       587.04
+       131072          320       164.95       794.63
+       262144          160       256.99      1020.04
+       524288           80       433.71      1208.84
+      1048576           40       786.60      1333.04
+      2097152           20      1670.16      1255.66
+      4194304           10      3216.02      1304.19
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 19:26:00 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        25.36         0.00
+            1         1000        26.18         0.04
+            2         1000        25.99         0.08
+            4         1000        26.03         0.15
+            8         1000        26.08         0.31
+           16         1000        26.08         0.61
+           32         1000        26.24         1.22
+           64         1000        26.30         2.43
+          128         1000        26.38         4.85
+          256         1000        28.46         8.99
+          512         1000        27.37        18.71
+         1024         1000        28.58        35.83
+         2048         1000        32.43        63.16
+         4096         1000        40.29       101.66
+         8192         1000        45.72       179.18
+        16384         1000        67.73       241.90
+        32768         1000        53.60       611.38
+        65536          640       113.36       578.13
+       131072          320       166.18       788.71
+       262144          160       263.23       995.89
+       524288           80       442.71      1184.26
+      1048576           40       793.58      1321.33
+      2097152           20      1631.59      1285.35
+      4194304           10      3361.88      1247.61
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 19:42:56 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        26.57         0.00
+            1         1000        25.90         0.04
+            2         1000        26.05         0.08
+            4         1000        25.89         0.15
+            8         1000        26.14         0.31
+           16         1000        25.90         0.62
+           32         1000        26.06         1.23
+           64         1000        26.19         2.44
+          128         1000        26.44         4.84
+          256         1000        26.63         9.61
+          512         1000        27.29        18.76
+         1024         1000        28.65        35.75
+         2048         1000        32.17        63.66
+         4096         1000        39.49       103.71
+         8192         1000        45.32       180.77
+        16384         1000        68.00       240.92
+        32768         1000        53.40       613.68
+        65536          640       111.79       586.25
+       131072          320       166.03       789.47
+       262144          160       260.24      1007.30
+       524288           80       435.55      1203.75
+      1048576           40       796.51      1316.46
+      2097152           20      1658.08      1264.81
+      4194304           10      3247.20      1291.67
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 19:43:19 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        25.92         0.00
+            1         1000        27.02         0.04
+            2         1000        26.85         0.07
+            4         1000        26.74         0.15
+            8         1000        26.95         0.30
+           16         1000        26.67         0.60
+           32         1000        27.13         1.18
+           64         1000        27.25         2.35
+          128         1000        27.03         4.73
+          256         1000        27.27         9.39
+          512         1000        28.05        18.25
+         1024         1000        29.35        34.89
+         2048         1000        32.56        62.89
+         4096         1000        39.65       103.30
+         8192         1000        45.94       178.31
+        16384         1000        67.91       241.25
+        32768         1000        73.41       446.39
+        65536          640       113.10       579.43
+       131072          320       167.15       784.16
+       262144          160       259.80      1009.02
+       524288           80       436.34      1201.56
+      1048576           40       795.87      1317.51
+      2097152           20      1654.00      1267.93
+      4194304           10      3340.71      1255.51
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 19:45:02 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        25.45         0.00
+            1         1000        26.29         0.04
+            2         1000        26.49         0.08
+            4         1000        26.35         0.15
+            8         1000        26.29         0.30
+           16         1000        26.19         0.61
+           32         1000        26.60         1.20
+           64         1000        26.49         2.42
+          128         1000        26.52         4.83
+          256         1000        19.88        12.88
+          512         1000        20.86        24.55
+         1024         1000        21.28        48.12
+         2048         1000        24.25        84.46
+         4096         1000        29.40       139.31
+         8192         1000        35.55       230.41
+        16384         1000        51.42       318.62
+        32768         1000        72.56       451.61
+        65536          640       112.30       583.58
+       131072          320       164.57       796.43
+       262144          160       257.93      1016.34
+       524288           80       434.72      1206.04
+      1048576           40       789.74      1327.74
+      2097152           20      1642.44      1276.85
+      4194304           10      3229.42      1298.78
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 19:45:09 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        25.39         0.00
+            1         1000        27.91         0.04
+            2         1000        26.44         0.08
+            4         1000        26.37         0.15
+            8         1000        26.44         0.30
+           16         1000        26.38         0.61
+           32         1000        26.54         1.21
+           64         1000        26.38         2.43
+          128         1000        26.66         4.80
+          256         1000        27.12         9.44
+          512         1000        27.65        18.52
+         1024         1000        29.09        35.20
+         2048         1000        32.37        63.26
+         4096         1000        39.88       102.71
+         8192         1000        47.41       172.81
+        16384         1000        68.19       240.28
+        32768         1000        72.39       452.67
+        65536          640       112.81       580.94
+       131072          320       165.02       794.27
+       262144          160       257.83      1016.74
+       524288           80       441.48      1187.58
+      1048576           40       818.46      1281.15
+      2097152           20      1651.13      1270.13
+      4194304           10      3229.40      1298.79
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 19:53:44 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        25.14         0.00
+            1         1000        25.95         0.04
+            2         1000        25.86         0.08
+            4         1000        26.09         0.15
+            8         1000        25.91         0.31
+           16         1000        25.87         0.62
+           32         1000        25.94         1.23
+           64         1000        26.30         2.43
+          128         1000        26.35         4.86
+          256         1000        26.64         9.61
+          512         1000        27.20        18.82
+         1024         1000        28.41        36.05
+         2048         1000        31.88        64.24
+         4096         1000        39.71       103.16
+         8192         1000        46.13       177.57
+        16384         1000        67.44       242.95
+        32768         1000        52.57       623.29
+        65536          640       112.49       582.57
+       131072          320       166.91       785.31
+       262144          160       261.10      1003.98
+       524288           80       436.40      1201.38
+      1048576           40       797.28      1315.19
+      2097152           20      1622.54      1292.52
+      4194304           10      3349.84      1252.09
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 19:56:35 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        25.35         0.00
+            1         1000        26.34         0.04
+            2         1000        26.72         0.07
+            4         1000        26.46         0.15
+            8         1000        26.46         0.30
+           16         1000        26.26         0.61
+           32         1000        26.46         1.21
+           64         1000        26.92         2.38
+          128         1000        27.11         4.72
+          256         1000        27.32         9.37
+          512         1000        27.61        18.54
+         1024         1000        28.98        35.33
+         2048         1000        32.47        63.07
+         4096         1000        39.56       103.55
+         8192         1000        47.39       172.86
+        16384         1000        68.04       240.81
+        32768         1000        53.55       611.92
+        65536          640       113.82       575.79
+       131072          320       166.42       787.61
+       262144          160       260.97      1004.50
+       524288           80       439.48      1192.98
+      1048576           40       799.05      1312.28
+      2097152           20      1641.72      1277.41
+      4194304           10      3248.56      1291.13
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 20:09:32 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        27.15         0.00
+            1         1000        26.44         0.04
+            2         1000        26.39         0.08
+            4         1000        26.48         0.15
+            8         1000        26.65         0.30
+           16         1000        26.40         0.61
+           32         1000        26.33         1.22
+           64         1000        26.57         2.41
+          128         1000        26.80         4.78
+          256         1000        27.22         9.41
+          512         1000        27.54        18.59
+         1024         1000        28.70        35.68
+         2048         1000        32.29        63.42
+         4096         1000        39.70       103.18
+         8192         1000        45.49       180.07
+        16384         1000        65.34       250.76
+        32768         1000        52.97       618.64
+        65536          640       112.28       583.69
+       131072          320       166.61       786.70
+       262144          160       259.15      1011.56
+       524288           80       437.87      1197.37
+      1048576           40       795.72      1317.77
+      2097152           20      1633.75      1283.64
+      4194304           10      3244.13      1292.89
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 20:27:57 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        26.88         0.00
+            1         1000        27.37         0.04
+            2         1000        26.46         0.08
+            4         1000        28.10         0.14
+            8         1000        26.38         0.30
+           16         1000        26.16         0.61
+           32         1000        26.24         1.22
+           64         1000        26.41         2.42
+          128         1000        26.84         4.77
+          256         1000        26.91         9.51
+          512         1000        27.38        18.70
+         1024         1000        28.67        35.72
+         2048         1000        31.99        64.01
+         4096         1000        39.42       103.90
+         8192         1000        45.65       179.45
+        16384         1000        67.48       242.80
+        32768         1000        53.35       614.19
+        65536          640       112.96       580.15
+       131072          320       165.44       792.25
+       262144          160       261.04      1004.23
+       524288           80       440.33      1190.68
+      1048576           40       799.35      1311.79
+      2097152           20      1679.84      1248.42
+      4194304           10      3303.91      1269.50
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 20:40:58 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        25.83         0.00
+            1         1000        26.31         0.04
+            2         1000        26.50         0.08
+            4         1000        26.50         0.15
+            8         1000        26.38         0.30
+           16         1000        26.53         0.60
+           32         1000        26.59         1.20
+           64         1000        26.74         2.39
+          128         1000        26.79         4.78
+          256         1000        27.16         9.43
+          512         1000        27.95        18.32
+         1024         1000        28.96        35.36
+         2048         1000        32.44        63.12
+         4096         1000        40.03       102.31
+         8192         1000        45.82       178.81
+        16384         1000        69.32       236.34
+        32768         1000        80.61       406.48
+        65536          640       113.54       577.19
+       131072          320       167.03       784.71
+       262144          160       258.98      1012.21
+       524288           80       437.02      1199.68
+      1048576           40       789.59      1328.00
+      2097152           20      1645.00      1274.86
+      4194304           10      3239.45      1294.76
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 20:41:05 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        25.05         0.00
+            1         1000        25.94         0.04
+            2         1000        26.00         0.08
+            4         1000        26.03         0.15
+            8         1000        26.02         0.31
+           16         1000        25.93         0.62
+           32         1000        26.34         1.22
+           64         1000        26.10         2.45
+          128         1000        26.56         4.82
+          256         1000        26.58         9.63
+          512         1000        27.28        18.77
+         1024         1000        28.80        35.56
+         2048         1000        31.88        64.25
+         4096         1000        39.86       102.76
+         8192         1000        46.20       177.31
+        16384         1000        67.71       241.98
+        32768         1000        68.47       478.58
+        65536          640       112.44       582.85
+       131072          320       166.15       788.88
+       262144          160       265.69       986.65
+       524288           80       433.92      1208.26
+      1048576           40       795.99      1317.33
+      2097152           20      1635.38      1282.36
+      4194304           10      3229.82      1298.62
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 20:56:02 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        25.73         0.00
+            1         1000        26.35         0.04
+            2         1000        26.41         0.08
+            4         1000        26.24         0.15
+            8         1000        26.27         0.30
+           16         1000        26.49         0.60
+           32         1000        26.67         1.20
+           64         1000        26.56         2.41
+          128         1000        26.81         4.77
+          256         1000        27.08         9.45
+          512         1000        27.58        18.57
+         1024         1000        29.22        35.04
+         2048         1000        32.44        63.13
+         4096         1000        39.92       102.61
+         8192         1000        46.33       176.80
+        16384         1000        67.14       244.04
+        32768         1000        65.79       498.07
+        65536          640       112.00       585.13
+       131072          320       165.16       793.60
+       262144          160       260.51      1006.27
+       524288           80       437.19      1199.23
+      1048576           40       795.31      1318.45
+      2097152           20      1658.70      1264.34
+      4194304           10      3296.52      1272.34
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 21:03:22 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        26.97         0.00
+            1         1000        26.35         0.04
+            2         1000        26.74         0.07
+            4         1000        26.30         0.15
+            8         1000        26.52         0.30
+           16         1000        26.39         0.61
+           32         1000        26.49         1.21
+           64         1000        27.09         2.36
+          128         1000        26.91         4.76
+          256         1000        27.01         9.48
+          512         1000        27.62        18.54
+         1024         1000        28.86        35.48
+         2048         1000        32.21        63.58
+         4096         1000        40.03       102.32
+         8192         1000        46.00       178.09
+        16384         1000        68.64       238.68
+        32768         1000        56.45       580.45
+        65536          640       113.73       576.26
+       131072          320       167.62       781.97
+       262144          160       259.37      1010.68
+       524288           80       435.52      1203.82
+      1048576           40       789.95      1327.39
+      2097152           20      2645.83       792.62
+      4194304           10      5180.96       809.56
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 21:22:11 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        25.43         0.00
+            1         1000        26.17         0.04
+            2         1000        26.24         0.08
+            4         1000        26.22         0.15
+            8         1000        26.08         0.31
+           16         1000        26.08         0.61
+           32         1000        26.33         1.22
+           64         1000        26.52         2.41
+          128         1000        26.81         4.77
+          256         1000        26.99         9.49
+          512         1000        27.80        18.42
+         1024         1000        29.06        35.24
+         2048         1000        32.35        63.31
+         4096         1000        39.69       103.19
+         8192         1000        46.41       176.50
+        16384         1000        68.62       238.75
+        32768         1000        53.87       608.28
+        65536          640       113.64       576.71
+       131072          320       165.64       791.33
+       262144          160       258.52      1014.02
+       524288           80       434.84      1205.70
+      1048576           40       788.74      1329.43
+      2097152           20      1630.84      1285.94
+      4194304           10      3228.86      1299.01
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 21:22:18 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        24.95         0.00
+            1         1000        25.89         0.04
+            2         1000        25.69         0.08
+            4         1000        25.80         0.16
+            8         1000        25.66         0.31
+           16         1000        25.63         0.62
+           32         1000        25.95         1.23
+           64         1000        26.00         2.46
+          128         1000        26.63         4.81
+          256         1000        26.52         9.65
+          512         1000        27.34        18.73
+         1024         1000        27.98        36.60
+         2048         1000        31.15        65.75
+         4096         1000        39.40       103.95
+         8192         1000        44.90       182.46
+        16384         1000        58.69       279.15
+        32768         1000        85.19       384.64
+        65536          640       113.29       578.46
+       131072          320       165.68       791.13
+       262144          160       258.20      1015.27
+       524288           80       436.86      1200.14
+      1048576           40       797.36      1315.06
+      2097152           20      1638.77      1279.71
+      4194304           10      3269.42      1282.89
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2019 Update 6, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sat May  2 21:24:19 2020
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.15.0-99-generic
+# Version               : #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT 
+# MPI_Op                         :   MPI_SUM  
+# 
+# 
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000        25.00         0.00
+            1         1000        25.64         0.04
+            2         1000        25.87         0.08
+            4         1000        25.67         0.16
+            8         1000        25.83         0.31
+           16         1000        25.57         0.63
+           32         1000        25.85         1.24
+           64         1000        26.14         2.45
+          128         1000        26.58         4.82
+          256         1000        26.60         9.62
+          512         1000        27.00        18.96
+         1024         1000        28.18        36.34
+         2048         1000        31.02        66.02
+         4096         1000        38.41       106.64
+         8192         1000        45.29       180.86
+        16384         1000        68.24       240.08
+        32768         1000        53.78       609.27
+        65536          640       112.47       582.68
+       131072          320       166.21       788.58
+       262144          160       259.83      1008.92
+       524288           80       434.46      1206.75
+      1048576           40       791.49      1324.81
+      2097152           20      1646.13      1273.99
+      4194304           10      3227.01      1299.75
+
+
+# All processes entering MPI_Finalize
+

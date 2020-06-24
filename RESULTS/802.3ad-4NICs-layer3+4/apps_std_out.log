@@ -1,0 +1,957 @@
+cat: /proc/sys/net/core/rmem_max: No such file or directory
+cat: /proc/sys/net/core/wmem_max: No such file or directory
+cat: /proc/sys/net/core/rmem_default: No such file or directory
+cat: /proc/sys/net/core/wmem_default: No such file or directory
+cat: /proc/sys/net/core/netdev_max_backlog: No such file or directory
+cat: /proc/sys/net/ipv4/tcp_mem: No such file or directory
+Failed to open /home/lacp/lacp-cloud-experiments/LOGS/SYS_INFO/ONE2.pdf for writing (File exists)
+cat: /proc/sys/net/core/rmem_max: No such file or directory
+cat: /proc/sys/net/core/wmem_max: No such file or directory
+cat: /proc/sys/net/core/rmem_default: No such file or directory
+cat: /proc/sys/net/core/wmem_default: No such file or directory
+cat: /proc/sys/net/core/netdev_max_backlog: No such file or directory
+cat: /proc/sys/net/ipv4/tcp_mem: No such file or directory
+Failed to open /home/lacp/lacp-cloud-experiments/LOGS/SYS_INFO/ONE3.pdf for writing (File exists)
+cat: /proc/sys/net/core/rmem_max: No such file or directory
+cat: /proc/sys/net/core/wmem_max: No such file or directory
+cat: /proc/sys/net/core/rmem_default: No such file or directory
+cat: /proc/sys/net/core/wmem_default: No such file or directory
+cat: /proc/sys/net/core/netdev_max_backlog: No such file or directory
+cat: /proc/sys/net/ipv4/tcp_mem: No such file or directory
+Failed to open /home/lacp/lacp-cloud-experiments/LOGS/SYS_INFO/ONE4.pdf for writing (File exists)
+cat: /proc/sys/net/core/rmem_max: No such file or directory
+cat: /proc/sys/net/core/wmem_max: No such file or directory
+cat: /proc/sys/net/core/rmem_default: No such file or directory
+cat: /proc/sys/net/core/wmem_default: No such file or directory
+cat: /proc/sys/net/core/netdev_max_backlog: No such file or directory
+cat: /proc/sys/net/ipv4/tcp_mem: No such file or directory
+make[1]: Entering directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/BT'
+rm -f *.o *.mod *~ mputil*
+rm -f  npbparams.h core
+make[1]: Leaving directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/BT'
+make[1]: Entering directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/BT'
+make[2]: Entering directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/sys'
+gcc -g -DFORTRAN_REC_SIZE=1 -o setparams setparams.c
+make[2]: Leaving directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/sys'
+../sys/setparams bt C 
+mpifort -c  -O3 mpinpb.f
+mpifort -c  -O3 bt_data.f
+mpifort -c  -O3 bt.f
+mpifort -c  -O3 make_set.f
+mpifort -c  -O3 initialize.f
+mpifort -c  -O3 exact_solution.f
+mpifort -c  -O3 exact_rhs.f
+mpifort -c  -O3 set_constants.f
+mpifort -c  -O3 adi.f
+mpifort -c  -O3 define.f
+mpifort -c  -O3 copy_faces.f
+mpifort -c  -O3 rhs.f
+mpifort -c  -O3 solve_subs.f
+mpifort -c  -O3 x_solve.f
+mpifort -c  -O3 y_solve.f
+mpifort -c  -O3 z_solve.f
+mpifort -c  -O3 add.f
+mpifort -c  -O3 error.f
+mpifort -c  -O3 verify.f
+mpifort -c  -O3 setup_mpi.f
+cd ../common; mpifort -c  -O3 print_results.f
+cd ../common; mpifort -c  -O3 timers.f
+make[2]: Entering directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/BT'
+mpifort -c  -O3 btio.f
+mpifort -O3 -o ../bin/bt.C.x bt.o bt_data.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o mpinpb.o ../common/print_results.o ../common/timers.o btio.o 
+make[2]: Leaving directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/BT'
+make[1]: Leaving directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/BT'
+make[1]: Entering directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/SP'
+rm -f *.o *.mod *~ mputil*
+rm -f npbparams.h core
+make[1]: Leaving directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/SP'
+make[1]: Entering directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/SP'
+make[2]: Entering directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/sys'
+../sys/setparams sp C 
+mpifort -c  -O3 mpinpb.f
+mpifort -c  -O3 sp_data.f
+mpifort -c  -O3 sp.f
+mpifort -c  -O3 make_set.f
+mpifort -c  -O3 initialize.f
+mpifort -c  -O3 exact_solution.f
+mpifort -c  -O3 exact_rhs.f
+mpifort -c  -O3 set_constants.f
+mpifort -c  -O3 adi.f
+mpifort -c  -O3 define.f
+mpifort -c  -O3 copy_faces.f
+mpifort -c  -O3 rhs.f
+mpifort -c  -O3 lhsx.f
+mpifort -c  -O3 lhsy.f
+mpifort -c  -O3 lhsz.f
+mpifort -c  -O3 x_solve.f
+mpifort -c  -O3 ninvr.f
+mpifort -c  -O3 y_solve.f
+mpifort -c  -O3 pinvr.f
+mpifort -c  -O3 z_solve.f
+mpifort -c  -O3 tzetar.f
+mpifort -c  -O3 add.f
+mpifort -c  -O3 txinvr.f
+mpifort -c  -O3 error.f
+mpifort -c  -O3 verify.f
+mpifort -c  -O3 setup_mpi.f
+mpifort -O3 -o ../bin/sp.C.x sp.o sp_data.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o mpinpb.o ../common/print_results.o ../common/timers.o 
+make[1]: Leaving directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/SP'
+make[1]: Entering directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/IS'
+rm -f *.o *~ mputil*
+rm -f is npbparams.h core
+make[1]: Leaving directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/IS'
+make[1]: Entering directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/IS'
+make[2]: Entering directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/sys'
+../sys/setparams is C 
+mpicc -c  -O3 is.c
+cd ../common; mpicc -c  -O3 c_print_results.c
+cd ../common; mpicc -c  -O3 c_timers.c
+mpicc -O3 -o ../bin/is.C.x is.o ../common/c_print_results.o ../common/c_timers.o 
+make[1]: Leaving directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/IS'
+make[1]: Entering directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/FT'
+rm -f *.o *.mod *~ mputil*
+rm -f ft npbparams.h core
+make[1]: Leaving directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/FT'
+make[1]: Entering directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/FT'
+make[2]: Entering directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/sys'
+../sys/setparams ft C 
+mpifort -c  -O3 mpinpb.f
+mpifort -c  -O3 ft_data.f
+mpifort -c  -O3 ft.f
+cd ../common; mpifort -c  -O3 randi8.f
+mpifort -O3 -o ../bin/ft.C.x ft.o ft_data.o mpinpb.o ../common/randi8.o ../common/print_results.o ../common/timers.o 
+make[1]: Leaving directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/FT'
+make -C src_cpp -f Makefile TARGET=MPI1
+make[1]: Entering directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/src_cpp'
+mpicxx -Ihelpers -I../src_c -DMPI1 -I. -O0 -Wall -Wextra -pedantic -Wno-long-long -c -o imb.o imb.cpp
+mpicxx -Ihelpers -I../src_c -DMPI1 -I. -O0 -Wall -Wextra -pedantic -Wno-long-long -c -o args_parser.o args_parser.cpp
+mpicxx -Ihelpers -I../src_c -DMPI1 -I. -O0 -Wall -Wextra -pedantic -Wno-long-long -c -o args_parser_utests.o args_parser_utests.cpp
+mpicxx -Ihelpers -I../src_c -DMPI1 -I. -O0 -Wall -Wextra -pedantic -Wno-long-long -c -o scope.o scope.cpp
+mpicxx -Ihelpers -I../src_c -DMPI1 -I. -O0 -Wall -Wextra -pedantic -Wno-long-long -c -o MPI1/MPI1_suite.o MPI1/MPI1_suite.cpp
+In file included from MPI1/MPI1_suite.cpp:73:0:
+helpers/helper_IMB_functions.h: In member function ‘void Bmark_descr::IMB_init_buffers_iter(comm_info*, iter_schedule*, Bench*, MODES, int, int)’:
+helpers/helper_IMB_functions.h:594:40: warning: ‘memset’ used with length equal to number of elements without multiplication by element size [-Wmemset-elt-size]
+             memset(time, 0, MAX_TIME_ID);
+                                        ^
+mpicxx -Ihelpers -I../src_c -DMPI1 -I. -O0 -Wall -Wextra -pedantic -Wno-long-long -c -o MPI1/MPI1_benchmark.o MPI1/MPI1_benchmark.cpp
+In file included from helpers/original_benchmark.h:63:0,
+                 from MPI1/MPI1_benchmark.cpp:61:
+helpers/helper_IMB_functions.h: In member function ‘void Bmark_descr::IMB_init_buffers_iter(comm_info*, iter_schedule*, Bench*, MODES, int, int)’:
+helpers/helper_IMB_functions.h:594:40: warning: ‘memset’ used with length equal to number of elements without multiplication by element size [-Wmemset-elt-size]
+             memset(time, 0, MAX_TIME_ID);
+                                        ^
+mpicxx -Ihelpers -I../src_c -DMPI1 -I. -O0 -Wall -Wextra -pedantic -Wno-long-long -c -o benchmark_suites_collection.o benchmark_suites_collection.cpp
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_allgather.o ../src_c/IMB_allgather.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_allgatherv.o ../src_c/IMB_allgatherv.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_allreduce.o ../src_c/IMB_allreduce.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_alltoall.o ../src_c/IMB_alltoall.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_alltoallv.o ../src_c/IMB_alltoallv.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_bandwidth.o ../src_c/IMB_bandwidth.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_barrier.o ../src_c/IMB_barrier.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_bcast.o ../src_c/IMB_bcast.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_benchlist.o ../src_c/IMB_benchlist.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_chk_diff.o ../src_c/IMB_chk_diff.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_cpu_exploit.o ../src_c/IMB_cpu_exploit.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_declare.o ../src_c/IMB_declare.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_err_handler.o ../src_c/IMB_err_handler.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_exchange.o ../src_c/IMB_exchange.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_gather.o ../src_c/IMB_gather.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_gatherv.o ../src_c/IMB_gatherv.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_g_info.o ../src_c/IMB_g_info.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_init.o ../src_c/IMB_init.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_init_transfer.o ../src_c/IMB_init_transfer.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_mem_manager.o ../src_c/IMB_mem_manager.c
+../src_c/IMB_mem_manager.c: In function ‘IMB_init_buffers_iter’:
+../src_c/IMB_mem_manager.c:707:9: warning: ‘memset’ used with length equal to number of elements without multiplication by element size [-Wmemset-elt-size]
+         memset(time, 0, MAX_TIME_ID);
+         ^~~~~~
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_output.o ../src_c/IMB_output.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_parse_name_mpi1.o ../src_c/IMB_parse_name_mpi1.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_pingping.o ../src_c/IMB_pingping.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_pingpong.o ../src_c/IMB_pingpong.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_reduce.o ../src_c/IMB_reduce.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_reduce_local.o ../src_c/IMB_reduce_local.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_reduce_scatter.o ../src_c/IMB_reduce_scatter.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_reduce_scatter_block.o ../src_c/IMB_reduce_scatter_block.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_scatter.o ../src_c/IMB_scatter.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_scatterv.o ../src_c/IMB_scatterv.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_sendrecv.o ../src_c/IMB_sendrecv.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_strgs.o ../src_c/IMB_strgs.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_utils.o ../src_c/IMB_utils.c
+mpicc -O0 -Wall -Wno-long-long -Ihelpers -I../src_c -DMPI1 -I. -DMPI1 -c -o MPI1/IMB_warm_up.o ../src_c/IMB_warm_up.c
+mpicxx -Ihelpers -I../src_c -DMPI1 -I. -O0 -Wall -Wextra -pedantic -Wno-long-long -o IMB-MPI1 imb.o args_parser.o args_parser_utests.o scope.o MPI1/MPI1_suite.o MPI1/MPI1_benchmark.o benchmark_suites_collection.o MPI1/IMB_allgather.o MPI1/IMB_allgatherv.o MPI1/IMB_allreduce.o MPI1/IMB_alltoall.o MPI1/IMB_alltoallv.o MPI1/IMB_bandwidth.o MPI1/IMB_barrier.o MPI1/IMB_bcast.o MPI1/IMB_benchlist.o MPI1/IMB_chk_diff.o MPI1/IMB_cpu_exploit.o MPI1/IMB_declare.o MPI1/IMB_err_handler.o MPI1/IMB_exchange.o MPI1/IMB_gather.o MPI1/IMB_gatherv.o MPI1/IMB_g_info.o MPI1/IMB_init.o MPI1/IMB_init_transfer.o MPI1/IMB_mem_manager.o MPI1/IMB_output.o MPI1/IMB_parse_name_mpi1.o MPI1/IMB_pingping.o MPI1/IMB_pingpong.o MPI1/IMB_reduce.o MPI1/IMB_reduce_local.o MPI1/IMB_reduce_scatter.o MPI1/IMB_reduce_scatter_block.o MPI1/IMB_scatter.o MPI1/IMB_scatterv.o MPI1/IMB_sendrecv.o MPI1/IMB_strgs.o MPI1/IMB_utils.o MPI1/IMB_warm_up.o 
+make[1]: Leaving directory '/home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/src_cpp'
+scp: /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP_SRC_CODE/mpi-benchmarks/.git/objects/pack/pack-6b13de139110e71974b7e6b3b7c5cc55465376ed.idx: Permission denied
+scp: /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP_SRC_CODE/mpi-benchmarks/.git/objects/pack/pack-6b13de139110e71974b7e6b3b7c5cc55465376ed.pack: Permission denied
+scp: /home/lacp/lacp-cloud-experiments/.git/objects/pack/pack-513c77f9e45465a4c075caff8367dcb507414275.idx: Permission denied
+scp: /home/lacp/lacp-cloud-experiments/.git/objects/pack/pack-513c77f9e45465a4c075caff8367dcb507414275.pack: Permission denied
+scp: /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/.git/objects/pack/pack-6b13de139110e71974b7e6b3b7c5cc55465376ed.idx: Permission denied
+scp: /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/.git/objects/pack/pack-6b13de139110e71974b7e6b3b7c5cc55465376ed.pack: Permission denied
+scp: /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP_SRC_CODE/mpi-benchmarks/.git/objects/pack/pack-6b13de139110e71974b7e6b3b7c5cc55465376ed.idx: Permission denied
+scp: /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP_SRC_CODE/mpi-benchmarks/.git/objects/pack/pack-6b13de139110e71974b7e6b3b7c5cc55465376ed.pack: Permission denied
+scp: /home/lacp/lacp-cloud-experiments/.git/objects/pack/pack-513c77f9e45465a4c075caff8367dcb507414275.idx: Permission denied
+scp: /home/lacp/lacp-cloud-experiments/.git/objects/pack/pack-513c77f9e45465a4c075caff8367dcb507414275.pack: Permission denied
+scp: /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/.git/objects/pack/pack-6b13de139110e71974b7e6b3b7c5cc55465376ed.idx: Permission denied
+scp: /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/.git/objects/pack/pack-6b13de139110e71974b7e6b3b7c5cc55465376ed.pack: Permission denied
+scp: /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP_SRC_CODE/mpi-benchmarks/.git/objects/pack/pack-6b13de139110e71974b7e6b3b7c5cc55465376ed.idx: Permission denied
+scp: /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP_SRC_CODE/mpi-benchmarks/.git/objects/pack/pack-6b13de139110e71974b7e6b3b7c5cc55465376ed.pack: Permission denied
+scp: /home/lacp/lacp-cloud-experiments/.git/objects/pack/pack-513c77f9e45465a4c075caff8367dcb507414275.idx: Permission denied
+scp: /home/lacp/lacp-cloud-experiments/.git/objects/pack/pack-513c77f9e45465a4c075caff8367dcb507414275.pack: Permission denied
+scp: /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/.git/objects/pack/pack-6b13de139110e71974b7e6b3b7c5cc55465376ed.idx: Permission denied
+scp: /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/.git/objects/pack/pack-6b13de139110e71974b7e6b3b7c5cc55465376ed.pack: Permission denied
+
+1-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+2-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+3-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+4-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+5-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+6-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+7-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+8-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+9-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+10-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+11-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+12-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+13-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+14-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+15-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+16-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+17-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+18-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+19-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+20-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+21-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+22-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+23-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+24-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+25-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+26-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+27-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+28-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+29-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+30-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+31-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+32-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+33-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+34-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+35-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+36-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+37-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+38-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+39-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+40-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+41-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+42-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+43-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+44-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+45-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+46-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+47-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+48-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+49-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+50-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+51-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+52-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+53-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+54-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+55-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+56-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+57-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+58-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+59-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+60-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+61-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+62-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+63-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+64-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+65-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+66-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+67-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+68-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+69-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+70-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+71-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+72-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+73-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+74-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+75-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+76-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+77-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+78-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+79-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+80-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+81-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+82-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+83-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+84-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+85-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+86-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+87-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+88-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+89-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+90-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+91-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+92-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+93-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+94-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+95-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+96-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+97-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+98-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+99-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+100-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+101-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+102-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+103-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+104-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+105-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+106-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+107-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+108-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+109-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+110-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+111-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+112-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+113-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+114-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+115-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+116-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+117-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+118-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+119-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+120-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+121-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+122-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+123-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+124-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+125-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+126-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+127-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+128-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+129-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+130-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+131-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+132-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+133-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+134-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+135-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+136-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+137-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+138-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+139-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+140-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+141-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+142-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+143-sp
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/sp.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/sp.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+144-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+145-is
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/is.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/is.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+146-intel
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 2 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes_intel /home/lacp/lacp-cloud-experiments/BENCHMARKS/mpi-benchmarks/IMB-MPI1 PingPong 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/intel.802.3ad-4NICs.log > /tmp/intel_mb.out) <<
+Done!
+
+147-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+148-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+149-bt
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/bt.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/bt.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
+
+150-ft
+
+Executing >> mpiexec --mca btl self,tcp --mca btl_tcp_if_include eth0 -np 32 -machinefile /home/lacp/lacp-cloud-experiments/MACHINE_FILES/nodes /home/lacp/lacp-cloud-experiments/BENCHMARKS/NPB3.4/NPB3.4-MPI/bin/ft.C.x 2>> /home/lacp/lacp-cloud-experiments/LOGS/apps_exec_std_error &> >(tee -a /home/lacp/lacp-cloud-experiments/LOGS/LOGS_BACKUP/ft.802.3ad-4NICs.log > /tmp/nas.out) <<
+Done!
