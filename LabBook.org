@@ -27,14 +27,6 @@ df_apps_2NICs_layer2_3 <- read_csv("/home/anderson/Desktop/GIT/lacp-cloud-experi
 df_apps_2NICs_layer2 <- read_csv("/home/anderson/Desktop/GIT/lacp-cloud-experiments/4nodes/802.3ad-2NICs-layer2/LOGS/apps_exec.17-05-2020.14h11m57s.csv", progress=FALSE)
 df_apps=bind_rows(df_apps_RegularTCP,df_apps_4NICs_layer3_4,df_apps_4NICs_layer2_3,df_apps_4NICs_layer2,df_apps_2NICs_layer3_4,df_apps_2NICs_layer2_3, df_apps_2NICs_layer2)
 df_apps$apps=toupper(df_apps$apps)
-df_intel_RegularTCP <- read_csv("/home/anderson/Desktop/GIT/lacp-cloud-experiments/4nodes/RegularTCP-1NIC/LOGS/intel.18-05-2020.03h41m53s.csv", progress=FALSE)
-df_intel_4NICs_layer3_4 <- read_csv("/home/anderson/Desktop/GIT/lacp-cloud-experiments/4nodes/802.3ad-4NICs-layer3+4/LOGS/intel.01-05-2020.21h56m14s.csv", progress=FALSE)
-df_intel_4NICs_layer2_3 <- read_csv("/home/anderson/Desktop/GIT/lacp-cloud-experiments/4nodes/802.3ad-4NICs-layer2+3/LOGS/intel.18-05-2020.20h13m05s.csv", progress=FALSE)
-df_intel_4NICs_layer2 <- read_csv("/home/anderson/Desktop/GIT/lacp-cloud-experiments/4nodes/802.3ad-4NICs-layer2/LOGS/intel.18-05-2020.13h49m40s.csv", progress=FALSE)
-df_intel_2NICs_layer3_4 <- read_csv("/home/anderson/Desktop/GIT/lacp-cloud-experiments/4nodes/802.3ad-2NICs-layer3+4/LOGS/intel.02-05-2020.17h13m12s.csv", progress=FALSE)
-df_intel_2NICs_layer2_3 <- read_csv("/home/anderson/Desktop/GIT/lacp-cloud-experiments/4nodes/802.3ad-2NICs-layer2+3/LOGS/intel.17-05-2020.19h17m23s.csv", progress=FALSE)
-df_intel_2NICs_layer2 <- read_csv("/home/anderson/Desktop/GIT/lacp-cloud-experiments/4nodes/802.3ad-2NICs-layer2/LOGS/intel.17-05-2020.14h11m57s.csv", progress=FALSE)
-df_intel=bind_rows(df_intel_RegularTCP,df_intel_4NICs_layer3_4,df_intel_4NICs_layer2_3,df_intel_4NICs_layer2,df_intel_2NICs_layer3_4,df_intel_2NICs_layer2_3, df_intel_2NICs_layer2)
 
 df_apps %>%
   group_by(apps,bondmode) %>%
@@ -45,28 +37,6 @@ df_apps %>%
     N=n()) %>%
   arrange(apps,bondmode) -> df_apps
 df_apps
-
-df_intel %>%
-  filter(bytes > 0) %>%
-  group_by(bytes,bondmode) %>%
-  summarise(
-    average=mean(time),
-    std=sd(time),
-    ste=3*std/sqrt(n()),
-    N=n()) %>%
-  arrange(bytes,bondmode) -> df_intel_latency
-df_intel_latency
-
-df_intel %>%
-  filter(bytes > 0) %>%
-  group_by(bytes,bondmode) %>%
-  summarise(
-    average=(mean(`mbytes-sec`)/1000),
-    std=(sd(`mbytes-sec`)/1000),
-    ste=3*std/sqrt(n()),
-    N=n()) %>%
-  arrange(bytes,bondmode) -> df_intel_band
-df_intel_band
 
 
 #+end_src
@@ -249,72 +219,6 @@ cols(
 10     2 802.3ad-2NICs-layer3+4 0.0000783 0.00000379 0.00000208    30
 # … with 151 more rows
 #+end_example
-*** PingPong - Latency
-#+begin_src R :results output graphics :file R/PLOTS/Latency-paper.pdf :exports both :width 4 :height 2.5 :session *R*  
-library("scales")
-ggplot(df_intel_latency,aes(x=bytes, y=average)) +
-  geom_line(aes(color = bondmode), alpha = 0.5) +
-  geom_point(aes(color=bondmode, shape=bondmode),size = 2) +
- # scale_shape_manual(values = c(15,16,17,18),
-  #                   breaks=c("RegularTCP-1NIC", "802.3ad-2NICs" ,"802.3ad-3NICs", "802.3ad-4NICs"),
-   #                  labels=c("RegularTCP","802.3ad-2NICs" ,"802.3ad-3NICs", "802.3ad-4NICs")) +
-  geom_errorbar(aes(ymin=average-ste, ymax=average+ste, color=bondmode, group=bondmode), width = .25) +
-  theme_bw(base_size=12) +
-  scale_y_log10(breaks=c(1,4,16,64,256,1024), labels=trans_format("log2", math_format(2^.x))) +
-  scale_x_log10(breaks=c(1,4,16,64,256,1024,4096,16384,65536,262144,1048576,4194304), labels=trans_format("log2", math_format(2^.x))) +
-  ylab(expression(paste("Average Latency Time (",mu,"s)"))) +
-  xlab('Message Size (Bytes)') +
-  #scale_color_manual(values=c( "#ccc210", "#ab6857", "#808585", "#7293cb"),
-   #                  breaks=c("RegularTCP-1NIC", "802.3ad-2NICs" ,"802.3ad-3NICs", "802.3ad-4NICs"),
-    #                 labels=c("RegularTCP","802.3ad-2NICs" ,"802.3ad-3NICs", "802.3ad-4NICs")) +
-  theme_bw(base_size = 12) +
-  theme (legend.position = "top",
-         legend.background = element_rect(color = "black", size = 0.3, linetype = "solid"),
-         plot.margin = unit(x = c(0, 0, 0, 0), units = "cm"),
-         axis.title=element_text(size=10),
-         legend.box.spacing = unit(0, "pt"), 
-         legend.title = element_blank(),
-         legend.text = element_text(color = "black", size = 10),
-         axis.text.x = element_text(hjust=1, size =10, color = "black"),
-         axis.text.y = element_text(size =10, color = "black"))
-
-#+end_src
-
-#+RESULTS:
-[[file:R/PLOTS/Latency-paper.pdf]]
-
-*** PingPong - Bandwidth
-#+begin_src R :results output graphics :file R/PLOTS/Bandwidth-paper.pdf :exports both :width 4 :height 2.5 :session *R*
-library("scales")
-df_intel$bondmode <- factor(df_intel$bondmode,levels = c("RegularTCP", "802.3ad-2NICs-layer2", "802.3ad-4NICs-layer2", "802.3ad-2NICs-layer2+3", "802.3ad-4NICs-layer2+3", "802.3ad-2NICs-layer3+4", "802.3ad-4NICs-layer3+4"))
-ggplot(df_intel_band,aes(x=bytes, y=average)) +
-geom_line(aes(col = bondmode), alpha = 0.5) +
-geom_point(aes(col = bondmode, shape=bondmode), size = 2) +
-#scale_shape_manual(values = c(15,16,17,18,19,20,21),
- #                    breaks=c("RegularTCP-1NIC", "802.3ad-2NICs-layer2", "802.3ad-4NICs-layer2", "802.3ad-2NICs-layer2+3", "802.3ad-4NICs-layer2+3", "802.3ad-2NICs-layer3+4", "802.3ad-4NICs-layer3+4"),
-  #                   labels=c("RegularTCP-1NIC", "802.3ad-2NICs-layer2", "802.3ad-4NICs-layer2", "802.3ad-2NICs-layer2+3", "802.3ad-4NICs-layer2+3", "802.3ad-2NICs-layer3+4", "802.3ad-4NICs-layer3+4")) +
-geom_errorbar(aes(ymin=average-ste, ymax=average+ste, color=bondmode, group=bondmode), width = .25) +
-theme_bw(base_size=12) +
-scale_y_continuous(breaks=c(0,1,2,3,4,5,6,7,8)) +
-scale_x_log10(breaks=c(65536,262144,1048576,4194304), labels=trans_format("log2", math_format(2^.x))) +
-ylab('Average Bandwidth(GB/s)') +
-xlab('Message Size (Bytes)') +
-scale_fill_manual(values=c("#B7B2AF", "#005b9e", "#79c45a", "#337cb1", "#94d07b", "#669dc5", "#afdc9c"),
-                         breaks=c("RegularTCP", "802.3ad-2NICs-layer2", "802.3ad-4NICs-layer2", "802.3ad-2NICs-layer2+3", "802.3ad-4NICs-layer2+3", "802.3ad-2NICs-layer3+4", "802.3ad-4NICs-layer3+4"),
-                         labels=c("RegularTCP", "802.3ad-2NICs-layer2", "802.3ad-4NICs-layer2", "802.3ad-2NICs-layer2+3", "802.3ad-4NICs-layer2+3", "802.3ad-2NICs-layer3+4", "802.3ad-4NICs-layer3+4")) +
-theme_bw(base_size=13) +  
- theme (legend.position = "none",
-         legend.background = element_rect(color = "black", size = 0.3, linetype = "solid"),
-         plot.margin = unit(x = c(0, 0, 0, 0), units = "cm"),
-         axis.title=element_text(size=10), 
-         legend.title = element_blank(),
-         legend.text = element_text(color = "black", size = 10),
-         axis.text.x = element_text(hjust=1, size =10, color = "black"),
-         axis.text.y = element_text(size =10, color = "black"))
-#+end_src
-
-#+RESULTS:
-[[file:R/PLOTS/Bandwidth-paper.pdf]]
 *** BT
 #+begin_src R :results output graphics :file  R/PLOTS/BT.pdf :exports both :width 1.8 :height 2.3 :session *R* 
 df_apps$bondmode <- factor(df_apps$bondmode,levels = c("RegularTCP", "802.3ad-2NICs-layer2", "802.3ad-4NICs-layer2", "802.3ad-2NICs-layer2+3", "802.3ad-4NICs-layer2+3", "802.3ad-2NICs-layer3+4", "802.3ad-4NICs-layer3+4"))
