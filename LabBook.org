@@ -6,60 +6,13 @@
 #+EXPORT_EXCLUDE_TAGS: noexport
 #+SEQ_TODO: TODO(t!) STARTED(s!) WAITING(w!) | DONE(d!) CANCELLED(c!) DEFERRED(f!)
 
-This LabBook is for the *25th IEEE Symposium on Computers and
-Communications (ISCC) 2020* paper and has a wealth of informations
-about the entire process used during the proposed experiments. To
-reproduce this evaluation, you can follow the steps below. Have fun!
+This LabBook is for the *The International Conference On Computational
+Science and its Applications (ICCSA 2020)* paper and has a wealth of
+informations about the entire process used during the proposed
+experiments. To reproduce this evaluation, you can follow the steps
+below. Have fun!
 
-#+BEGIN_QUOTE
-*Reporting errors*: This repository has several links to self-contained
- files as well as links from the Internet, so if you try to reproduce
- it and find broken links or other problems, please tell me everything
- so that I can improve it. :)
-#+END_QUOTE
-
-* Environment Setup
-** Cluster
-- First, the user iscc was created. (user:password = iscc:iscc)
-- SSH passwordless configured.
-- Mustang03 was configured as NFS server, and shared their home
-  directory.
-- Mustang04 mounted the NFS in their home.
-
-A complete tutorial of how to do this can be seen in [[https://mpitutorial.com/tutorials/running-an-mpi-cluster-within-a-lan/][here]].
-
-** OpenNebula
-OpenNebula was installed and configured following the [[https://docs.opennebula.org/5.10/deployment/opennebula_installation/frontend_installation.html][Front-End
-installation manual]] and [[https://docs.opennebula.org/5.10/deployment/node_installation/index.html][Node installation manual]] 
-acess = http://138.94.76.170:8082/
-user:password = oneadmin:yacAsHukIag3
 * Experimental Project
-** Objective
-** Benchmarks
-Below is a brief overview about the benchmarks used.
-*** NAS Parallel Benchmarks
-The NAS Parallel Benchmarks (NPB) are a small set of programs designed
-to help evaluate the performance of parallel supercomputers. The
-benchmarks are derived from computational fluid dynamics (CFD)
-applications. Problem sizes in NPB are predefined and indicated as
-different classes.
-
-In this evaluation, we selectec four benchmarks of the NPB set with
-their Messsage Passing Interface (MPI) parallel implementation.
-
-- *IS* - Integer Sort, random memory access.
-- *FT* - Discrete 3D fast Fourier Transform, all-to-all communication.
-- *BT* - Block Tri-diagonal solver.
-- *SP* - Scalar Penta-diagonal solver.
-
-They were executed with 16 processes on 2 nodes, 8 processes per
-node.
-
-** How to Reproduce it
-** Required Softwares
-** System Information 
-** Bash Scripts Descriptions
-** Experiments Execution
 ** Graphical Analysis
 *** Read CSVs
 #+begin_src R :results output :session *R* :exports both
